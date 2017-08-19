@@ -1,0 +1,237 @@
+/*Explicación sirve para añadir una fuente. en font-family se le asigna un nombre y en src la ruta  */
+
+@font-face {
+  font-family: "nav";
+    src: url(/fonts/Montserrat-Bold.otf) format("truetype");
+}
+/*Quita las esquinas a todo (*) */
+	* {
+	margin: 0;
+        padding: 0; }
+
+
+    .contenedor li a {
+        color: rgba(255,255,255,0.6);
+}
+
+
+.contenedor {
+    width: 990px;
+    margin: 0 auto;
+
+}
+
+
+body {
+    background: #fdefd5;
+}
+
+
+nav {
+    /*hace que el div se vaya a la derecha  */
+    float: right;
+}
+
+
+nav ul {
+    list-style: none;
+    margin-right: 200px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+    
+}
+
+nav li a {
+    text-decoration: none;
+    display: block;
+    padding: 50px 0;
+    font-family: nav;
+    font-size: 15pt;
+
+}
+
+#main-header {
+    width: 100;
+    height: 140px;
+    background: #f1592b;
+}
+
+
+#logo {
+    /*margin: top right bottom left  */
+    /*margin: top right(and left) bottom  */
+    /*margin: top(and bottom) right(and left)  */
+    /* margin: all  */
+    margin: 10px 0 0 40px;
+    width: 252px;
+    
+}
+
+#contenedor_banner {
+    width: 100%;
+    height: 390px;
+    background: #00bd9d;
+    
+}
+
+
+
+
+#study {
+        height: 419px;
+    text-align: center;
+        background-color: rgba(250,250,250,0.6);
+    width: 240px;
+      padding: 10px;
+    border-radius: 40px;
+    float: left;
+    margin: 20px 0 20px 0px;
+}
+
+#espe {
+    height: 419px;
+    text-align: center;
+    background-color: rgba(250,250,250,0.6);
+    width: 240px;
+    border-radius: 40px;
+  float: left;
+  padding: 10px;
+  margin: 20px 0px 20px 40px;
+}
+
+#porque{
+    height: 419px;
+    text-align: center;
+    background-color: rgba(250,250,250,0.6);
+    width: 240px;
+    border-radius: 40px;
+  float: left;
+  padding: 10px;
+  margin: 20px 0px 20px 40px;
+}
+
+
+#titulo {
+    margin-top: 10px;
+    font-family: nav;
+    font-size: 34px;
+}
+
+
+
+#texto {
+    margin: 10px auto;
+    width: 207px;
+    text-align: justify;
+}
+
+
+#contenedor-footer {
+
+    clear: both;
+    background-color: #313131;
+    height: 250px;
+    width: auto;
+}
+
+#datos p {
+    margin-top: 10px;
+    color: #bcbcbc;
+}
+
+#datos {
+    float: left;
+    margin-top: 40px;
+    text-align: justify;
+    width: 300px;
+}
+#datos a img {
+        width: 300px;
+ }
+
+ .main {
+    width: 990px;
+    margin: 0 auto;
+
+
+
+
+    
+
+}
+
+.contenedor-cosas {
+margin: 0 65px;;
+}
+
+
+#menu li:first-child a{
+    color: rgba(255,255,255,1);
+}
+
+.contenedor li a:hover {
+color: rgba(255,255,255,1);
+}
+
+#post   {
+text-align: center;
+           margin: 40px 0 0 40px;
+    float: left;
+    width: 300px;
+    
+}
+
+
+#post ul {
+    padding-top: 15px;  
+    list-style: none;
+
+}
+
+#post ul li a {
+    text-decoration: none;
+}
+#post ul li  {
+padding-bottom: 10px;
+
+}
+
+#link1 {
+text-align: center;
+    color: white;
+       font-family: nav; 
+}
+
+
+
+.contenedor-cosas2 {
+margin: 0 5px;
+}
+
+#sociales {
+    float: left;
+    margin: 40px 0 0 40px;
+    width: 300px;
+    text-align: center;
+}
+
+
+#sociales ul {
+    margin-top: 15px;
+    list-style: none;
+}
+
+#sociales a {
+    
+    color: white;
+        text-decoration: none;
+    font-size: 15pt;
+}
+
+#sociales ul li {
+    margin-top: 10px;
+}

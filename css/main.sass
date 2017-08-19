@@ -1,0 +1,197 @@
+@import _variables
+
+/*Explicación sirve para añadir una fuente. en font-family se le asigna un nombre y en src la ruta  */
+
+@font-face 
+    font-family: "nav"
+    src: url(/fonts/Montserrat-Bold.otf) format("truetype")
+
+/*Quita las esquinas a todo (*) */
+* 
+    
+    margin: 0
+    padding: 0 
+
+.contenedor 
+    box-sizing: border-box
+    width: 990px
+    margin: 0 auto
+    li
+        a
+            color: $blanco-transparente
+            &:hover
+                color: rgb(255,255,255)
+
+body 
+    background: $background
+
+
+
+nav 
+    /*hace que el div se vaya a la derecha  */
+    float: right
+    ul 
+        list-style: none
+        margin-right: 200px
+        li 
+            display: inline-block
+            margin-left: 10px
+            a 
+                text-decoration: none
+                display: block
+                padding: 50px 0
+                font-family: nav
+                font-size: 15pt
+
+
+
+#main-header 
+    width: 100
+    height: 140px
+    background: $naranjo
+
+
+
+#logo 
+    /*margin: top right bottom left  */
+    /*margin: top right(and left) bottom  */
+    /*margin: top(and bottom) right(and left)  */
+    /* margin: all  */
+    margin: 10px 0 0 40px
+    width: 252px
+    
+
+
+#contenedor_banner 
+    height: 390px
+    background: #00bd9d
+    
+
+#study, #espe, #porque
+    height: 419px
+    text-align: center
+    background: $blanco-transparente
+    border-radius: 40px
+    float: left
+    width: 240px
+    padding: 10px
+
+
+#study
+    margin: 20px 0px 20px 0px
+
+
+#espe
+    margin: 20px 0px 20px 40px
+
+
+#porque
+    margin: 20px 0px 20px 40px
+
+
+
+#titulo 
+    margin-top: 10px
+    font-family: nav
+    font-size: 34px
+
+
+
+
+#texto 
+    margin: 10px auto
+    width: 207px
+    text-align: justify
+
+
+
+#contenedor-footer 
+    box-sizing: border-box
+    clear: both
+    background-color: #313131
+    height: 250px
+    width: auto
+
+
+#datos p 
+    margin-top: 10px
+    color: #bcbcbc
+
+
+#datos 
+    float: left
+    margin-top: 40px
+    text-align: justify
+    width: 300px
+
+#datos a img 
+    width: 300px
+ 
+
+.main 
+    width: 990px
+    margin: 0 auto
+
+
+.contenedor-cosas
+    box-sizing: border-box
+    margin: 0 65px
+
+
+
+#menu li:first-child a
+    color: rgba(255,255,255,1)
+
+
+
+
+
+#post   
+    text-align: center
+    margin: 40px 0 0 40px
+    float: left
+    width: 300px
+    
+
+
+
+#post ul 
+    padding-top: 15px  
+    list-style: none
+    li  
+        padding-bottom: 10px
+        a 
+            text-decoration: none
+
+
+
+
+#link1 
+    text-align: center
+    color: white
+    font-family: nav 
+
+
+
+
+.contenedor-cosas2
+    box-sizing: border-box 
+    margin: 0 5px
+
+
+#sociales 
+    float: left
+    margin: 40px 0 0 40px
+    width: 300px
+    text-align: center
+    ul 
+        margin-top: 15px
+        list-style: none
+        li 
+            margin-top: 10px
+            a 
+                color: white
+                text-decoration: none
+                font-size: 15pt
+
+
