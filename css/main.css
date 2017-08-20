@@ -1,153 +1,74 @@
-@charset "UTF-8";
-/*Explicación sirve para añadir una fuente. en font-family se le asigna un nombre y en src la ruta  */
-@font-face {
-  font-family: "nav";
-  src: url(/fonts/Montserrat-Bold.otf) format("truetype"); }
-/*Quita las esquinas a todo (*) */
 * {
   margin: 0;
-  padding: 0; }
-
-.contenedor {
-  box-sizing: border-box;
-  width: 990px;
-  margin: 0 auto; }
-  .contenedor li a {
-    color: rgba(255, 255, 255, 0.6); }
-    .contenedor li a:hover {
-      color: white; }
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   background: #fdefd5; }
 
-nav {
-  /*hace que el div se vaya a la derecha  */
-  float: right; }
-  nav ul {
-    list-style: none;
-    margin-right: 200px; }
-    nav ul li {
-      display: inline-block;
-      margin-left: 10px; }
-      nav ul li a {
-        text-decoration: none;
-        display: block;
-        padding: 50px 0;
-        font-family: nav;
-        font-size: 15pt; }
+header {
+  display: flex;
+  background: #F1592B;
+  height: 140px; }
 
-#main-header {
-  width: 100;
+.contenedor {
   height: 140px;
-  background: #f1592b; }
+  margin: 0 auto;
+  max-width: 990px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; }
+  .contenedor img {
+    width: 100%;
+    max-width: 252px; }
 
-#logo {
-  /*margin: top right bottom left  */
-  /*margin: top right(and left) bottom  */
-  /*margin: top(and bottom) right(and left)  */
-  /* margin: all  */
-  margin: 10px 0 0 40px;
-  width: 252px; }
-
-#contenedor_banner {
-  height: 390px;
-  background: #00bd9d; }
-
-#study, #espe, #porque {
-  height: 419px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 40px;
-  float: left;
-  width: 240px;
-  padding: 10px; }
-
-#study {
-  margin: 20px 0px 20px 0px; }
-
-#espe {
-  margin: 20px 0px 20px 40px; }
-
-#porque {
-  margin: 20px 0px 20px 40px; }
-
-#titulo {
-  margin-top: 10px;
-  font-family: nav;
-  font-size: 34px; }
-
-#texto {
-  margin: 10px auto;
-  width: 207px;
-  text-align: justify; }
-
-#contenedor-footer {
-  box-sizing: border-box;
-  clear: both;
-  background-color: #313131;
-  height: 250px;
-  width: auto; }
-
-#datos p {
-  margin-top: 10px;
-  color: #bcbcbc; }
-
-#datos {
-  float: left;
-  margin-top: 40px;
-  text-align: justify;
-  width: 300px; }
-
-#datos a img {
-  width: 300px; }
-
-.main {
-  width: 990px;
-  margin: 0 auto; }
-
-.contenedor-cosas {
-  box-sizing: border-box;
-  margin: 0 65px; }
-
-#menu li:first-child a {
-  color: white; }
-
-#post {
-  text-align: center;
-  margin: 40px 0 0 40px;
-  float: left;
-  width: 300px; }
-
-#post ul {
-  padding-top: 15px;
-  list-style: none; }
-  #post ul li {
-    padding-bottom: 10px; }
-    #post ul li a {
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  nav ul li {
+    list-style: none;
+    margin: 0 10px; }
+    nav ul li a {
       text-decoration: none; }
 
-#link1 {
-  text-align: center;
-  color: white;
-  font-family: nav; }
+.contenedorbanner {
+  background: #00bd9d; }
 
-.contenedor-cosas2 {
-  box-sizing: border-box;
-  margin: 0 5px; }
+#banner1 {
+  max-width: 990px;
+  width: 100%;
+  margin: 0 auto; }
+  #banner1 img {
+    max-width: 990px;
+    width: 100%; }
 
-#sociales {
-  float: left;
-  margin: 40px 0 0 40px;
-  width: 300px;
-  text-align: center; }
-  #sociales ul {
-    margin-top: 15px;
-    list-style: none; }
-    #sociales ul li {
+.containercards {
+  display: flex;
+  max-width: 990px;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+  .containercards .card {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.6);
+    height: 439px;
+    max-width: 260px;
+    width: 100%; }
+    .containercards .card img {
+      max-width: 207px;
+      width: 100%; }
+    .containercards .card .titulo {
       margin-top: 10px; }
-      #sociales ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 15pt; }
+    .containercards .card p {
+      margin-top: 10px; }
 
 /*# sourceMappingURL=main.css.map */
