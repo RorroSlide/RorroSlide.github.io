@@ -1,7 +1,11 @@
+@font-face
+    font-family: "nav"
+    src: url(/fonts/Montserrat-Bold.otf) format("truetype")
 *
     margin: 0
     padding: 0
     box-sizing: border-box
+    font-family: 'Roboto', sans-serif
 
 body
     background: #fdefd5
@@ -32,16 +36,21 @@ nav
         li
             list-style: none
             margin: 0 10px
+            &:first-child a
+                color: white
             a
                 text-decoration: none
+                font-family: nav
+                color: rgba(255,255,255,0.6)
+                font-size: 25px
+                &:hover
+                    color: white
 
 .contenedorbanner
-    height: 390px
     background:  #00bd9d
 
 #banner1
     max-width: 990px
-    width: 100%
     margin: 0 auto
     img
         max-width: 990px
@@ -56,9 +65,9 @@ nav
     flex-direction: row
     justify-content: space-between
     .card
+        text-align: center
         margin: 10px 10px
         padding: 10px 10px
-        text-align: center
         border-radius: 40px
         background: rgba(255, 255, 255, 0.6)
         height: 439px
@@ -72,28 +81,60 @@ nav
         
         p
             margin-top: 10px
+            text-align: justify
         
 
 footer
     background: #313131
-    height: 250px
+    padding: 20px 0
+    
     .container-footer
-        height: 250px
         display: flex
         max-width: 990px
         width: 100%
         margin: 0 auto
-        align-items: center
-        flex-wrap: wrap
+        flex-wrap:  wrap
         flex-direction: row
-        justify-content: space-around
+        justify-content: center
+
         .footer-cards
             text-align: center
             max-width: 300px
             width: 100%
+            h2
+                color: white
+            p
+                color: rgba(255,255,255,0.6)
+                text-align: justify
+            img
+                max-width: 300px
+                width: 100%
             ul
                 margin-top: 10px
                 list-style: none
                 li
                     a
                         text-decoration: none
+                        color: rgba(255,255,255,0.6)
+                        &:hover
+                            color: white
+            #redes
+                padding: 10px
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-around
+                a
+                    text-decoration: none
+                    color: white
+                    span
+                        font-size: 40px
+@media (max-width: 840px)
+    .containercards
+        justify-content: center
+
+@media (max-width: 743px)
+    .contenedor
+        justify-content: center
+@media (max-width: 599px)
+    .footer-cards
+        margin-top: 10px
