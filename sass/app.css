@@ -11,7 +11,9 @@ header {
   display: flex;
   justify-content: center;
   height: 50px;
-  background-color: rgba(16, 44, 84, 0.4); }
+  width: 100%;
+  position: fixed;
+  background-color: #80a7b7; }
 
 #contenedor {
   display: flex;
