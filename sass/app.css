@@ -139,31 +139,36 @@ section {
       font-size: 80px;
       margin-bottom: 60px; }
 
-form {
+#ss-form {
   display: flex;
   justify-content: space-between; }
-  form #datos {
+  #ss-form #datos {
     display: flex;
     flex-direction: column; }
-    form #datos .datos {
+    #ss-form #datos .datos {
       margin-bottom: 60px;
       border-radius: 5px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
       width: 150%;
       height: 20px; }
-  form #mensaje {
+  #ss-form #mensaje {
     display: flex;
-    flex-direction: column; }
-    form #mensaje div {
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 300px;
+    height: 100%;
+    width: 100%; }
+    #ss-form #mensaje div {
       display: flex;
       flex-direction: column;
       align-items: flex-end; }
-      form #mensaje div .enviar {
-        width: 100px; }
-      form #mensaje div .mensaje {
+      #ss-form #mensaje div .mensaje {
         border-radius: 5px;
-        height: 300px;
-        width: 500px;
-        margin-bottom: 60px; }
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        height: 500px;
+        width: 100%;
+        margin-bottom: 60px;
+        resize: none; }
 
 footer {
   display: flex;
