@@ -125,23 +125,24 @@ $(function(){
             <div>
             <h1>CONTACTO</h1>
             </div>
-            <form>
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='respuesta.html';}"></iframe>
+<form action="https://docs.google.com/forms/d/e/1FAIpQLScPBbZ3U5TsrgNuMh3ybIb-Gu17dCxyWpj_AzROqtuczMwHKg/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
 <div id="datos">
-<p>Nombre*</p>
-<input type="text"  class="datos" name="nombre">
-<p>Email*</p>
-<input type="text" class="datos" name="email">
+<p>Email*</p>          
+<input type="email" name="emailAddress" class="datos" placeholder="Su correo electrónico" required>
 <p>Telefono</p>
-<input type="text" class="datos" name="telefono">
+<input type="text" name="entry.739056745" class="datos" placeholder="Su telefono">
+<p>Nombre*</p>
+<input type="text" name="entry.1296079151" class="datos" placeholder="Su nombre" required>
 </div>
 <div id="mensaje">
 <p>Mensaje*</p>
 <div>
-<input type="text" class="mensaje" name="mensaje">
-<input type="submit" class="enviar" value="Enviar">
+<textarea name="entry.1861433315" class="mensaje" placeholder="Su mensaje" required></textarea>
+<input type="submit" name="submit" class="enviar" value="Enviar">
 </div>
 </div>
-            </form>
         </article>
     
     <footer>
